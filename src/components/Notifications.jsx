@@ -224,7 +224,7 @@ const Notifications = () => {
             <div className="mt-6 flex justify-end space-x-3">
               <button
                 onClick={() => setPushNotification({ title: '', message: '', image: null })}
-                className="px-4 py-2 text-sm text-gray-100 hover:text-gray-900 bg-white border border-gray-200 rounded-md hover:bg-gray-50"
+                className="px-4 py-2 text-sm text-gray-900 hover:text-gray-900 bg-gray-100 border border-gray-200 rounded-md hover:bg-gray-50"
               >
                 Cancel
               </button>
