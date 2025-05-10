@@ -122,10 +122,10 @@ const Profile = () => {
     <div className="ml-60 bg-gray-100 min-h-screen p-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="bg-gray-100 rounded-xl shadow-sm p-6 mb-6">
+        <div className="bg-gray-100 rounded-xl  p-6 mb-6">
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
             <div className="relative group">
-              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-gray-100 ">
                 <img src={profileImage} alt="Profile" className="w-full h-full object-cover" />
                 {isEditing && (
                   <label className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -149,7 +149,7 @@ const Profile = () => {
                       name="name"
                       value={userData.name}
                       onChange={handleInputChange}
-                      className="text-2xl font-bold text-gray-800 bg-gray-50 border border-gray-200 rounded-lg px-3 py-1 focus:ring-2 focus:ring-blue-300 focus:border-blue-300"
+                      className="text-2xl font-bold text-gray-800 bg-gray-100 border border-gray-100 rounded-lg px-3 py-1 focus:ring-2 focus:ring-blue-300 focus:border-blue-300"
                     />
                   ) : (
                     <h1 className="text-2xl font-bold text-gray-800">{userData.name}</h1>
@@ -200,7 +200,7 @@ const Profile = () => {
                       name="email"
                       value={userData.email}
                       onChange={handleInputChange}
-                      className="bg-gray-50 border border-gray-200 rounded-lg px-3 py-1 focus:ring-2 focus:ring-blue-300 focus:border-blue-300"
+                      className="bg-gray-100 border border-gray-100 rounded-lg px-3 py-1 focus:ring-2 focus:ring-blue-300 focus:border-blue-300"
                     />
                   ) : (
                     <span>{userData.email}</span>
@@ -214,7 +214,7 @@ const Profile = () => {
                       name="phone"
                       value={userData.phone}
                       onChange={handleInputChange}
-                      className="bg-gray-50 border border-gray-200 rounded-lg px-3 py-1 focus:ring-2 focus:ring-blue-300 focus:border-blue-300"
+                      className="bg-gray-100 border border-gray-100 rounded-lg px-3 py-1 focus:ring-2 focus:ring-blue-300 focus:border-blue-300"
                     />
                   ) : (
                     <span>{userData.phone}</span>
@@ -238,7 +238,7 @@ const Profile = () => {
                       <span>Change Password</span>
                     </button>
                   ) : (
-                    <form onSubmit={handlePasswordSubmit} className="mt-4 bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <form onSubmit={handlePasswordSubmit} className="mt-4 bg-gray-100 p-4 rounded-lg border border-gray-100">
                       <h3 className="font-medium text-gray-800 mb-3">Change Password</h3>
                       <div className="space-y-3">
                         <div>
@@ -248,7 +248,7 @@ const Profile = () => {
                             name="currentPassword"
                             value={passwordData.currentPassword}
                             onChange={handlePasswordChange}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                            className="w-full px-3 py-2 border border-gray-100 rounded-md focus:ring-blue-500 focus:border-blue-500"
                           />
                           {passwordErrors.currentPassword && (
                             <p className="mt-1 text-sm text-red-600">{passwordErrors.currentPassword}</p>
@@ -261,7 +261,7 @@ const Profile = () => {
                             name="newPassword"
                             value={passwordData.newPassword}
                             onChange={handlePasswordChange}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                            className="w-full px-3 py-2 border border-gray-100 rounded-md focus:ring-blue-500 focus:border-blue-500"
                           />
                           {passwordErrors.newPassword && (
                             <p className="mt-1 text-sm text-red-600">{passwordErrors.newPassword}</p>
@@ -310,7 +310,7 @@ const Profile = () => {
           {/* Left Column - E-commerce Stats */}
           <div className="lg:col-span-1 space-y-6">
             {/* Stats Cards */}
-            <div className="bg-gray-100 rounded-xl shadow-sm p-6">
+            <div className="bg-gray-100 rounded-xl  p-6">
               <h2 className="text-lg font-semibold text-gray-800 mb-4">Store Overview</h2>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-100 border border-gray-100 rounded-lg p-4">
@@ -324,7 +324,7 @@ const Profile = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gray-100 border border-gray-200 rounded-lg p-4">
+                <div className="bg-gray-100 border border-gray-100 rounded-lg p-4">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
                       <FiDollarSign className="w-5 h-5 text-green-600" />
@@ -335,7 +335,7 @@ const Profile = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gray-100 border border-gray-200 rounded-lg p-4">
+                <div className="bg-gray-100 border border-gray-100 rounded-lg p-4">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
                       <FiPackage className="w-5 h-5 text-purple-600" />
@@ -346,7 +346,7 @@ const Profile = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gray-100 border border-gray-200 rounded-lg p-4">
+                <div className="bg-gray-100 border border-gray-100 rounded-lg p-4">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center">
                       <FiPieChart className="w-5 h-5 text-yellow-600" />
@@ -361,7 +361,7 @@ const Profile = () => {
             </div>
 
             {/* Quick Actions */}
-            <div className="bg-gray-100 rounded-xl shadow-sm p-6">
+            <div className="bg-gray-100 rounded-xl  p-6">
               <h2 className="text-lg font-semibold text-gray-800 mb-4">Quick Actions</h2>
               <div className="space-y-3">
                 <button className="w-full flex items-center gap-3 p-3 bg-gray-100 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
@@ -383,7 +383,7 @@ const Profile = () => {
           {/* Right Column - Activity & Controls */}
           <div className="lg:col-span-2 space-y-6">
             {/* Activity Timeline */}
-            <div className="bg-gray-100 rounded-xl shadow-sm p-6">
+            <div className="bg-gray-100 rounded-xl  p-6">
               <h2 className="text-lg font-semibold text-gray-800 mb-4">Recent Activity</h2>
               <div className="space-y-4">
                 {recentActivity.map((activity) => (
@@ -402,7 +402,7 @@ const Profile = () => {
             </div>
 
             {/* E-commerce Controls */}
-            <div className="bg-gray-100 rounded-xl shadow-sm p-6">
+            <div className="bg-gray-100 rounded-xl  p-6">
               <h2 className="text-lg font-semibold text-gray-800 mb-4">Store Management</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <button className="flex items-center gap-3 p-4 bg-gray-100 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors">
