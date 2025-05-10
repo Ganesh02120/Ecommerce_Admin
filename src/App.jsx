@@ -6,7 +6,7 @@ import Login from './components/Login';
 import Orders from './components/Orders';
 import Dashboard from './components/Dashboard';
 import AddProduct from './components/AddProduct';
-import Profile from './components/profile';
+import Profile from './components/Profile';
 import Stores from './components/Stores';
 import Users from './components/Users';
 import Notifications from './components/Notifications';
