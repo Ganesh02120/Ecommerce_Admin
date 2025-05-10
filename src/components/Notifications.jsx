@@ -122,9 +122,9 @@ const Notifications = () => {
     <div className="ml-60 bg-gray-100 min-h-screen p-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="bg-gray-100 rounded-xl shadow-lg p-6 mb-6">
+        <div className="bg-gray-100   p-6 mb-6">
           <div className="flex justify-between items-center">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 bg-gray-100">
               <FiBell className="w-8 h-8 text-blue-600" />
               <h1 className="text-2xl font-bold text-gray-800 ">Notifications</h1>
             </div>
@@ -157,7 +157,7 @@ const Notifications = () => {
 
         {/* Push Notifications Form */}
         {activeTab === 'push' && (
-          <div className="bg-gray-100 rounded-lg shadow-lg p-6 mb-6">
+          <div className="bg-gray-100 rounded-lg  p-6 mb-6">
             <div className="grid grid-cols-1 gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -241,7 +241,7 @@ const Notifications = () => {
 
         {/* Silent Notifications Form */}
         {activeTab === 'silent' && (
-          <div className="bg-gray-100 rounded-lg shadow-lg p-6 mb-6">
+          <div className="bg-gray-100   p-6 mb-6">
             <div className="grid grid-cols-1 gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -283,7 +283,7 @@ const Notifications = () => {
         )}
 
         {/* Notifications Table */}
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="bg-gray-100  overflow-hidden">
           <div className="px-6 py-4 border-b border-gray-100">
             <h3 className="text-lg font-semibold text-gray-800">Recent Notifications</h3>
           </div>
